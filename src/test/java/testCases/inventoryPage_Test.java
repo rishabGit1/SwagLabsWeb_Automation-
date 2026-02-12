@@ -13,7 +13,10 @@ import pages.LoginPage;
 import pages.inventoryPage;
 
 public class inventoryPage_Test extends TestBase
+
 {
+	
+	//new testcases added
 	LoginPage login;
 	inventoryPage invent;
 	@BeforeMethod
