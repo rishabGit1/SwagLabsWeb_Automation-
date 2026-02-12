@@ -49,6 +49,8 @@ public class inventoryPage extends TestBase
     	
     }
     
+    //new method for delete products
+    
     
     
 
