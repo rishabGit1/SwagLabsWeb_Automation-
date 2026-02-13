@@ -3,8 +3,6 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
 import base.TestBase;
 import utility.HandleDropDownList;
 
@@ -96,6 +94,7 @@ public class inventoryPage extends TestBase {
 		productRedtShirt.click();
 		Thread.sleep(3000);
 		return cartCount.getText();
+ 
 		
 	}*/
 	
@@ -109,6 +108,10 @@ public class inventoryPage extends TestBase {
 	}
 
 
-
+ 
+    
+    //new method for delete products
+    
+     
 
 }
