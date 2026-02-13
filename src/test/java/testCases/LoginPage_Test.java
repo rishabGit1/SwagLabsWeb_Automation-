@@ -36,9 +36,6 @@ public class LoginPage_Test extends TestBase
 	    Reporter.log("Login Successful = " + actURL);
 	  }
 	
-	
-	
-	
 	@Test
 	public void verifyURLofWebsiteTest() throws InterruptedException, EncryptedDocumentException, IOException
 	{

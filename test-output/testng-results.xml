@@ -2,66 +2,66 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Added product in cart count is = 6]]>
+      <![CDATA[Login Successful = https://www.saucedemo.com/inventory.html]]>
     </line>
     <line>
-      <![CDATA[Added product in cart count is = 4]]>
+      <![CDATA[Title of website = Swag Labs]]>
     </line>
     <line>
-      <![CDATA[Inventory Page title = Products]]>
+      <![CDATA[URL of website = https://www.saucedemo.com/]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-02-13T08:40:17 IST" name="Default suite" finished-at="2026-02-13T08:40:41 IST" duration-ms="23874">
+  <suite started-at="2026-02-13T15:10:49 IST" name="Default suite" finished-at="2026-02-13T15:10:58 IST" duration-ms="8261">
     <groups>
     </groups>
-    <test started-at="2026-02-13T08:40:17 IST" name="Default test" finished-at="2026-02-13T08:40:41 IST" duration-ms="23874">
-      <class name="testCases.inventoryPage_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:17 IST" name="setUp" finished-at="2026-02-13T08:40:22 IST" duration-ms="5184" status="PASS">
+    <test started-at="2026-02-13T15:10:49 IST" name="Default test" finished-at="2026-02-13T15:10:58 IST" duration-ms="8261">
+      <class name="testCases.LoginPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:49 IST" name="setUp" finished-at="2026-02-13T15:10:52 IST" duration-ms="3128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCartTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:22 IST" name="addProductToCartTest" finished-at="2026-02-13T08:40:28 IST" duration-ms="5422" status="PASS">
+        <test-method signature="loginToAppTest()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:52 IST" name="loginToAppTest" finished-at="2026-02-13T15:10:54 IST" duration-ms="1045" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Added product in cart count is = 6]]>
+              <![CDATA[Login Successful = https://www.saucedemo.com/inventory.html]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addProductToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:28 IST" name="closeBrowser" finished-at="2026-02-13T08:40:28 IST" duration-ms="512" status="PASS">
+        </test-method> <!-- loginToAppTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:54 IST" name="closeBrowser" finished-at="2026-02-13T15:10:54 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:28 IST" name="setUp" finished-at="2026-02-13T08:40:31 IST" duration-ms="3059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:54 IST" name="setUp" finished-at="2026-02-13T15:10:56 IST" duration-ms="1815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="remove2ProductsTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:31 IST" name="remove2ProductsTest" finished-at="2026-02-13T08:40:37 IST" duration-ms="5551" status="PASS">
+        <test-method signature="verifyTitleofWebsite()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:56 IST" name="verifyTitleofWebsite" finished-at="2026-02-13T15:10:56 IST" duration-ms="54" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Added product in cart count is = 4]]>
+              <![CDATA[Title of website = Swag Labs]]>
             </line>
           </reporter-output>
-        </test-method> <!-- remove2ProductsTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:37 IST" name="closeBrowser" finished-at="2026-02-13T08:40:37 IST" duration-ms="319" status="PASS">
+        </test-method> <!-- verifyTitleofWebsite -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:56 IST" name="closeBrowser" finished-at="2026-02-13T15:10:56 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:37 IST" name="setUp" finished-at="2026-02-13T08:40:40 IST" duration-ms="2957" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:56 IST" name="setUp" finished-at="2026-02-13T15:10:57 IST" duration-ms="1659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPageTitleTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:40 IST" name="verifyPageTitleTest" finished-at="2026-02-13T08:40:40 IST" duration-ms="360" status="PASS">
+        <test-method signature="verifyURLofWebsiteTest()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:57 IST" name="verifyURLofWebsiteTest" finished-at="2026-02-13T15:10:57 IST" duration-ms="46" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Inventory Page title = Products]]>
+              <![CDATA[URL of website = https://www.saucedemo.com/]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyPageTitleTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:40 IST" name="closeBrowser" finished-at="2026-02-13T08:40:41 IST" duration-ms="422" status="PASS">
+        </test-method> <!-- verifyURLofWebsiteTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginPage_Test@139982de]" started-at="2026-02-13T15:10:57 IST" name="closeBrowser" finished-at="2026-02-13T15:10:58 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.inventoryPage_Test -->
+      </class> <!-- testCases.LoginPage_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
