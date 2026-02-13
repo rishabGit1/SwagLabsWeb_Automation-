@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="closeBrowser"/>
-          <include name="verifyPageTitleTest"/>
+          <include name="addProductToCartTest"/>
         </methods>
       </class> <!-- testCases.inventoryPage_Test -->
     </classes>

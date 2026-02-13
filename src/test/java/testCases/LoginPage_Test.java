@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -10,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.TestBase;
 import pages.LoginPage;
+import utility.ReadData;
 
 public class LoginPage_Test extends TestBase
 {
@@ -28,7 +30,7 @@ public class LoginPage_Test extends TestBase
 	 public void loginToAppTest() throws IOException, InterruptedException
 	  {
 	    login.loginToApp();
-	    String expURL = "https://www.saucedemo.com/inventory.html";
+	    String expURL =   ReadData.readExcel(0, 0);    //"https://www.saucedemo.com/inventory.html";(0,0)
 	    String actURL = login.verifyURLofWebsite();
 	    Assert.assertEquals(expURL, actURL);
 	    Reporter.log("Login Successful = " + actURL);
@@ -38,18 +40,18 @@ public class LoginPage_Test extends TestBase
 	
 	
 	@Test
-	public void verifyURLofWebsiteTest() throws InterruptedException
+	public void verifyURLofWebsiteTest() throws InterruptedException, EncryptedDocumentException, IOException
 	{
-		String expURL = "https://www.saucedemo.com/";
+		String expURL = ReadData.readExcel(0, 1);            //"https://www.saucedemo.com/";(0,1)
 		String actURL = login.verifyURLofWebsite();
 		Assert.assertEquals(expURL, actURL);
 		Reporter.log("URL of website = " + actURL);
 		
 	}
 	@Test
-	public void verifyTitleofWebsite()
+	public void verifyTitleofWebsite() throws EncryptedDocumentException, IOException
 	{
-		String expTitle = "Swag Labs";
+		String expTitle = ReadData.readExcel(0, 2);//"Swag Labs";(0,2)
 		String actTitle = login.verifyTitleofWebsite();
 		Assert.assertEquals(expTitle, actTitle);
 		Reporter.log("Title of website = " + actTitle);
