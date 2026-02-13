@@ -28,7 +28,6 @@ public class LoginPage extends TestBase
 	   {
 		   usernameTxtBox.sendKeys(ReadData.readConfigFile("Username"));
 		   passwordTxtBox.sendKeys(ReadData.readConfigFile("Password"));
-		   Thread.sleep(3000);
 		   loginBtn.click();
 	   }
 	public String verifyURLofWebsite()
