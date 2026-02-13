@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -11,51 +12,52 @@ import org.testng.annotations.Test;
 import base.TestBase;
 import pages.LoginPage;
 import pages.inventoryPage;
+import utility.ReadData;
 
 public class inventoryPage_Test extends TestBase
 
 {
-	
-	//new testcases added
+
+	// new testcases added
 	LoginPage login;
 	inventoryPage invent;
+
 	@BeforeMethod
-	public void setUp() throws IOException, InterruptedException
-	{
+	public void setUp() throws IOException, InterruptedException {
 		initialization();
-		login= new LoginPage();
+		login = new LoginPage();
 		invent = new inventoryPage();
 		login.loginToApp();
 
 	}
-	
-	
+
 	@Test
-	public void  verifyPageTitleTest() throws InterruptedException
-	{
-		String expTitle = "Products";
+	public void verifyPageTitleTest() throws InterruptedException, EncryptedDocumentException, IOException {
+		String expTitle = ReadData.readExcel(0, 3);            //"Products";(0,3)
 		String actTitle = invent.verifyPageTitle();
 		Assert.assertEquals(expTitle, actTitle);
 		Reporter.log("Inventory Page title = " + actTitle);
 	}
-	
+
 	@Test
-	public void addProductToCartTest() throws InterruptedException
-	{
-		String expCount = "2";
-		String actCount = invent.addProductToCart();
-		Assert.assertEquals(expCount,actCount);
+	public void addProductToCartTest() throws InterruptedException, EncryptedDocumentException, IOException {
+		String expCount = ReadData.readExcel(0, 4);//"6";(0,4);
+		String actCount = invent.add6Products();
+		Assert.assertEquals(expCount, actCount);
 		Reporter.log("Added product in cart count is = " + actCount);
 	}
-	
-	
-	
-	@AfterMethod
-	public void closeBrowser() 
+	@Test
+	public void remove2ProductsTest() throws InterruptedException, EncryptedDocumentException, IOException
 	{
+		String expCount = ReadData.readExcel(0, 5);//"4";(0,5)
+		String actCount = invent.remove2Products();
+		Assert.assertEquals(expCount, actCount);
+		Reporter.log("Added product in cart count is = " + actCount);
+	}
+
+	@AfterMethod
+	public void closeBrowser() {
 		driver.close();
 	}
-	
-	
-	
+
 }
