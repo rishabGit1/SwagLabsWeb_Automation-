@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.ReadData;
+
 
 public class TestBase 
 {
@@ -30,6 +30,7 @@ public class TestBase
 	public void initialization() throws IOException
 	{
 		
+		//String browser = ReadData.readConfigFile("Browser");
 		String browser = ReadData.readConfigFile("Browser");
 		
 		if(browser.equals("chrome"))
