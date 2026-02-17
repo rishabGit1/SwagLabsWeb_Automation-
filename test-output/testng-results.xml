@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Added product in cart count is = 6]]>
-    </line>
-    <line>
-      <![CDATA[Added product in cart count is = 4]]>
-    </line>
-    <line>
-      <![CDATA[Inventory Page title = Products]]>
-    </line>
   </reporter-output>
-  <suite started-at="2026-02-13T08:40:17 IST" name="Default suite" finished-at="2026-02-13T08:40:41 IST" duration-ms="23874">
+  <suite started-at="2026-02-17T08:25:26 IST" name="Default suite" finished-at="2026-02-17T08:25:31 IST" duration-ms="5601">
     <groups>
     </groups>
-    <test started-at="2026-02-13T08:40:17 IST" name="Default test" finished-at="2026-02-13T08:40:41 IST" duration-ms="23874">
-      <class name="testCases.inventoryPage_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:17 IST" name="setUp" finished-at="2026-02-13T08:40:22 IST" duration-ms="5184" status="PASS">
+    <test started-at="2026-02-17T08:25:26 IST" name="Default test" finished-at="2026-02-17T08:25:31 IST" duration-ms="5601">
+      <class name="testCases.LoginPage_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPage_Test@909217e]" started-at="2026-02-17T08:25:26 IST" name="setUp" finished-at="2026-02-17T08:25:29 IST" duration-ms="3682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCartTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:22 IST" name="addProductToCartTest" finished-at="2026-02-13T08:40:28 IST" duration-ms="5422" status="PASS">
+        <test-method signature="loginToAppTest()[pri:0, instance:testCases.LoginPage_Test@909217e]" started-at="2026-02-17T08:25:29 IST" name="loginToAppTest" finished-at="2026-02-17T08:25:31 IST" duration-ms="1237" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Can't open workbook - unsupported file type: UNKNOWN]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Can't open workbook - unsupported file type: UNKNOWN
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:228)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+at utility.ReadData.readExcel(ReadData.java:39)
+at testCases.LoginPage_Test.loginToAppTest(LoginPage_Test.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
-            <line>
-              <![CDATA[Added product in cart count is = 6]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addProductToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:28 IST" name="closeBrowser" finished-at="2026-02-13T08:40:28 IST" duration-ms="512" status="PASS">
+        </test-method> <!-- loginToAppTest -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.LoginPage_Test@909217e]" started-at="2026-02-17T08:25:31 IST" name="closeBrowser" finished-at="2026-02-17T08:25:31 IST" duration-ms="588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToAppTest status=FAILURE method=LoginPage_Test.loginToAppTest()[pri:0, instance:testCases.LoginPage_Test@909217e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:28 IST" name="setUp" finished-at="2026-02-13T08:40:31 IST" duration-ms="3059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="remove2ProductsTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:31 IST" name="remove2ProductsTest" finished-at="2026-02-13T08:40:37 IST" duration-ms="5551" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Added product in cart count is = 4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- remove2ProductsTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:37 IST" name="closeBrowser" finished-at="2026-02-13T08:40:37 IST" duration-ms="319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:37 IST" name="setUp" finished-at="2026-02-13T08:40:40 IST" duration-ms="2957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPageTitleTest()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:40 IST" name="verifyPageTitleTest" finished-at="2026-02-13T08:40:40 IST" duration-ms="360" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Inventory Page title = Products]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitleTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.inventoryPage_Test@35dab4eb]" started-at="2026-02-13T08:40:40 IST" name="closeBrowser" finished-at="2026-02-13T08:40:41 IST" duration-ms="422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.inventoryPage_Test -->
+      </class> <!-- testCases.LoginPage_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

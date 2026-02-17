@@ -16,10 +16,6 @@ public class LoginPage extends TestBase
 	   @FindBy(xpath="//input[@name='password']") private WebElement passwordTxtBox;
 	   @FindBy(xpath="//input[@name='login-button']") private WebElement loginBtn;
        
-	   
-	   
-	   
-	   
 	   public LoginPage()
 	   {
 		   PageFactory.initElements(driver, this);

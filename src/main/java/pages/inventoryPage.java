@@ -107,6 +107,11 @@ public class inventoryPage extends TestBase {
 		removeProdBoltTShirt.click();
 		return cartCount.getText();
 	}
+	
+	public void clickOnCart()
+	{
+		cartIcon.click();
+	}
 
 
 
