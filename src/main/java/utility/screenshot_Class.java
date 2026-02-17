@@ -24,10 +24,10 @@ public class screenshot_Class extends TestBase
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		//desktop file path
-		File dest = new File("C:\\Users\\dell\\Downloads\\Rishabh_Main_12feb\\Rishabh_Main\\Screenshots\\"+nameofMethod+"--"+getDate()+".jpeg");
+		//File dest = new File("C:\\Users\\dell\\Downloads\\Rishabh_Main_12feb\\Rishabh_Main\\Screenshots\\"+nameofMethod+"--"+getDate()+".jpeg");
 		
 		//Laptop file path
-		//File dest = new File("C:\\Users\\DELL\\Desktop\\SwagLabsWeb_Automation-\\Screenshots"+nameofMethod+"--"+getDate()+".jpeg");
+		File dest = new File("C:\\Users\\DELL\\Desktop\\SwagLabsWeb_Automation-\\Screenshots"+nameofMethod+"--"+getDate()+".jpeg");
 
 		
 		FileHandler.copy(source, dest);

@@ -26,8 +26,9 @@ public class Checkout_Step1_Page extends TestBase
 	
 	 public String enterDetails() throws InterruptedException
 	{
+		 Thread.sleep(2000);
 		zipCodeTxtBox.sendKeys("380550");
-		Thread.sleep(2000);
+		
 		lastNameTxtBox.sendKeys("QA");
 		Thread.sleep(2000);
 		firstNameTxtBox.sendKeys("Rishabh");

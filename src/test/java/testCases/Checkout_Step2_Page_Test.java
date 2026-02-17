@@ -44,13 +44,10 @@ public class Checkout_Step2_Page_Test extends TestBase
 	public void verifyCheckoutPageTitleTest()
 	{
 		
-		
-		
 	 String expTitle = "Checkout: Overview";
 	 String actTitle = check2.verifyCheckoutPageTitle();
 	 Assert.assertEquals(expTitle, actTitle);
 	 Reporter.log("Checkout Page2  title = " + actTitle);
-		
 		
 	}
 	@Test

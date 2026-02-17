@@ -16,7 +16,7 @@ public class TestBase
     /* public static ChromeDriver driver;
 	public void initialization()
 	{
-		WebDriverManager.chromedriver().setup();
+	s	WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	    driver.get("https://www.saucedemo.com/");
@@ -55,6 +55,7 @@ public class TestBase
 		
 		
 	}
+	
 	
 	
 	

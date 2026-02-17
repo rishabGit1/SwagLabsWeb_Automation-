@@ -11,17 +11,22 @@ import org.testng.annotations.Test;
 
 import base.TestBase;
 import pages.Cart_Page;
+import pages.Checkout_Step1_Page;
+import pages.Checkout_Step2_Page;
+import pages.Complete_Page;
 import pages.LoginPage;
 import pages.inventoryPage;
 import utility.screenshot_Class;
 
-public class Cart_Page_Test extends TestBase
+public class Complete_Page_Test extends TestBase
 {
-	
+
 	LoginPage login;
 	inventoryPage invent;
 	Cart_Page cart;
-
+	Checkout_Step1_Page check1;
+	Checkout_Step2_Page check2;
+	Complete_Page completePage;
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException 
 	{
@@ -29,44 +34,36 @@ public class Cart_Page_Test extends TestBase
 		login = new LoginPage();
 		invent = new inventoryPage();
 		cart=new Cart_Page();
+		check1= new Checkout_Step1_Page();
+		check2 = new Checkout_Step2_Page();
+		completePage = new Complete_Page();
 		login.loginToApp();
 		invent.clickOnCart();
-		
-
+		cart.clickonCheckoutBtn();
+		check1.enterDetails();
+		check2.clickOnfinishBtn();
 	}
 	
 	@Test
-	public void verifyPageURLTest()
+	public void verifythankyouTextTest()
 	{
-		
-		String expURL = "https://www.saucedemo.com/cart.html";
-		String actURL = cart.verifyPageURL();
-		Assert.assertEquals(expURL, actURL);
-		Reporter.log("Inventory Page title = " + actURL);
-		
+		 String expTxt = "Thank you for your order!";
+		 String actTxt = completePage.verifythankyouText();
+		 Assert.assertEquals(expTxt, actTxt);
+		 Reporter.log("Thank you Text = " + actTxt);
 	}
 	
 	@Test
-	public void verifyPageTitleTest()
+	public void clickHomebtnTest()
 	{
-		String expTitle = "Your Cart";
-		String actTitle = cart.verifyPageTitle();
-		Assert.assertEquals(expTitle, actTitle);
-		Reporter.log("Inventory Page title = " + actTitle);
+		 String expURL = "https://www.saucedemo.com/inventory.html";
+		 String actURL = completePage.clickHomebtn();
+		 Assert.assertEquals(expURL, actURL);
+		 Reporter.log("current page URL  = " + actURL);
 	}
 	
-	@Test
-	public void clickonCheckoutBtnTest()
-	{
-		
-		String expPageURL = "https://www.saucedemo.com/checkout-step-one.html";
-		String actPageURL = cart.clickonCheckoutBtn();
-		Assert.assertEquals(expPageURL, actPageURL);
-		Reporter.log("Inventory Page title = " + actPageURL);
-		
-	}
 	
-
+	
 	@AfterMethod
 	public void closeBrowser(ITestResult it) throws IOException 
 	{
@@ -78,6 +75,4 @@ public class Cart_Page_Test extends TestBase
 		driver.close();
 	}
 	
-	
-
 }
