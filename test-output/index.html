@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-1520422371\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1299587351\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,16 +129,15 @@
                   <a name="loginToAppTest">
                   </a> <!-- loginToAppTest -->
                   <span class="method-name">loginToAppTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.saucedemo.com/] but found [https://www.saucedemo.com/inventory.html]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at testCases.LoginPage_Test.loginToAppTest(LoginPage_Test.java:38)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+                  <div class="stack-trace">java.io.IOException: Can&apos;t open workbook - unsupported file type: UNKNOWN
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:228)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at utility.ReadData.readExcel(ReadData.java:39)
+	at testCases.LoginPage_Test.loginToAppTest(LoginPage_Test.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -147,7 +146,7 @@
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -172,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-1520422371\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1299587351\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,7 +228,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginToAppTest')
 data.setCell(0, 2, 'testCases.LoginPage_Test')
-data.setCell(0, 3, 1135);
+data.setCell(0, 3, 1237);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -255,9 +254,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.LoginPage_Test</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyTitleofWebsite</span>
-                <br/>
                 <span class="ignored-method-name">verifyURLofWebsiteTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyTitleofWebsite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -278,11 +277,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginToAppTest</span>
-                <span class="method-start">3219 ms</span>
+                <span class="method-start">3684 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser([TestResult name=loginToAppTest status=FAILURE method=LoginPage_Test.loginToAppTest()[pri:0, instanc...)</span>
-                <span class="method-start">4356 ms</span>
+                <span class="method-start">4947 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
