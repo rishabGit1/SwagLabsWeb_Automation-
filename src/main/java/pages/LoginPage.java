@@ -36,6 +36,15 @@ public class LoginPage extends TestBase
 		
 		return driver.getTitle();
 	}
+	public String verifyMultipleCredentialUsers(String un , String password)
+	{
+		
+		usernameTxtBox.sendKeys(un);
+		passwordTxtBox.sendKeys(password);
+		loginBtn.click();
+		return driver.getCurrentUrl();
+		
+	}
 	
 	
 	
